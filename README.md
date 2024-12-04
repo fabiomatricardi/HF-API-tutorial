@@ -1,3 +1,5 @@
+<img src='https://github.com/fabiomatricardi/HF-API-tutorial/raw/main/images/tweetPOST_workflow.png' width=900>
+
 # HF-API-tutorial
 How to use Hugging Face Inference API calls from your python
 
@@ -253,6 +255,8 @@ image.save("twittpost002.png")
 image.show()
 ```
 
+<img src='https://github.com/fabiomatricardi/HF-API-tutorial/raw/main/images/twittpost001.png' width=600>
+
 As you can see we have 0 control on the generation parameters.
 ```python
 client = Client("stabilityai/stable-diffusion-3.5-large")
@@ -271,7 +275,7 @@ image = Image.open(temp)
 image.save("output_image.png")
 image.show()
 ```
-
+<img src='https://github.com/fabiomatricardi/HF-API-tutorial/raw/main/images/output_image.png' width=900>
 
 ### Generate 3 Tweets from the newsletter
 ```
@@ -300,9 +304,37 @@ console.rule()
 console.print(tweet3)
 console.rule()
 ```
+The result is like this
+```
+ORIGINaL RESULT...
 
+### Tweet 1:
+Before diving into AI writing, know your own writing voice. Before trusting AI summaries, learn to read critically. Before dismissing AI hallucinations, master research. AI is evolving, but it starts with you. #GenAI #LLMs #TechTrends
 
+### Tweet 2:
+The hype around Generative AI is real, but it's crucial to see beyond the surface. LLMs, while impressive, have significant limitations in handling sequential data, transparency, and computational complexity. The scaling law isn’t a magic solution. #AIReality #TechDebate
 
+### Tweet 3:
+Innovation in AI architecture is on the horizon. Startups and researchers are exploring non-Transformer models like RWKV and Hymba, which offer efficient parallel training and linear scaling. The future of AI is about more than just size—it's about smarter design. Stay tuned for more! #AIFuture #TechInnovation
+```
+
+final
+```
+Before diving into AI writing, know your own writing voice. Before trusting AI 
+summaries, learn to read critically. Before dismissing AI hallucinations, master
+research. AI is evolving, but it starts with you. #GenAI #LLMs #TechTrends
+────────────────────────────────────────────────────────────────────────────────
+The hype around Generative AI is real, but it's crucial to see beyond the 
+surface. LLMs, while impressive, have significant limitations in handling 
+sequential data, transparency, and computational complexity. The scaling law 
+isn’t a magic solution. #AIReality #TechDebate
+────────────────────────────────────────────────────────────────────────────────
+Innovation in AI architecture is on the horizon. Startups and researchers are 
+exploring non-Transformer models like RWKV and Hymba, which offer efficient 
+parallel training and linear scaling. The future of AI is about more than just 
+size—it's about smarter design. Stay tuned for more! #AIFuture #TechInnovation
+
+```
 
 
 
